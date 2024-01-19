@@ -206,7 +206,8 @@ struct FormattedBodyText_Previews: PreviewProvider, TestablePreview {
             """,
             "<p>This is a list</p>\n<ul>\n<li>One</li>\n<li>Two</li>\n<li>And number 3</li>\n</ul>\n",
             "<ul><li>First item</li><li>Second item</li><li>Third item</li></ul>",
-            "<p>test</p>\n<p>test</p>"
+            "<p>test</p>\n<p>test</p>",
+            "123<pre><code>123\nsdsdsdssd\nSdsdsdssdsds\nSdssdsds\nSDsdssdsdsd</code></pre>SDSDD<br />lol"
         ]
         
         let attributedStringBuilder = AttributedStringBuilder(permalinkBaseURL: ServiceLocator.shared.settings.permalinkBaseURL, mentionBuilder: MentionBuilder())

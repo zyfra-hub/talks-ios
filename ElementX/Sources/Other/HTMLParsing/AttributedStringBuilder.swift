@@ -280,9 +280,16 @@ struct AttributedStringBuilder: AttributedStringBuilderProtocol {
                     background: \(temporaryBlockquoteMarkingColor.toHexString());
                     display: block;
                 }
-                pre,code {
+                code {
                     background-color: \(temporaryCodeBlockMarkingColor.toHexString());
                     display: inline;
+                    white-space: pre;
+                    font-size: 0.9em;
+                    -coretext-fontname: .AppleSystemUIFontMonospaced-Regular;
+                }
+                pre {
+                    background-color: \(temporaryCodeBlockMarkingColor.toHexString());
+                    display: inline-block;
                     white-space: pre;
                     font-size: 0.9em;
                     -coretext-fontname: .AppleSystemUIFontMonospaced-Regular;
