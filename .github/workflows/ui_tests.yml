@@ -23,6 +23,14 @@ jobs:
     steps:
       - run: df -h
 
+      - run: sudo rm -rf /usr/share/dotnet
+
+      - run: sudo rm -rf /opt/ghc
+
+      - run: sudo rm -rf "/usr/local/share/boost"
+      
+      - run: sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+
       - uses: nschloe/action-cached-lfs-checkout@v1
 
       - run: df -h
